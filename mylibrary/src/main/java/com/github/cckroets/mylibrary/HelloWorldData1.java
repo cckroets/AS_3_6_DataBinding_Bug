@@ -1,13 +1,18 @@
 package com.github.cckroets.mylibrary;
 
-// AS 3.6 gives: 'Cannot resolve symbol'
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+
 import com.github.cckroets.mylibrary.databinding.HelloWorld1Binding;
 
 public class HelloWorldData1 {
 
-    static HelloWorld1Binding binding;
+    public static void hello(@NonNull LayoutInflater layoutInflater, @NonNull ViewGroup container) {
+        HelloWorld1Binding binding = HelloWorld1Binding.inflate(layoutInflater, container, false);
 
-    public static void hello() {
-        System.out.println(binding);
+        // AS 3.6 gives: 'Cannot resolve symbol: toolbar'
+        System.out.println(binding.hello2.toolbar);
     }
 }
