@@ -23,6 +23,7 @@ android {
 
     dataBinding.enabled = true
 
+    // Doing this causes the bug
     defaultConfig {
         sourceSets {
             main.res.srcDirs = [

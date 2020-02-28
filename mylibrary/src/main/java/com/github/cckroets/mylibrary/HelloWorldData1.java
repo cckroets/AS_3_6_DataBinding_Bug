@@ -1,5 +1,6 @@
 package com.github.cckroets.mylibrary;
 
+// AS 3.6 gives: 'Cannot resolve symbol'
 import com.github.cckroets.mylibrary.databinding.HelloWorld1Binding;
 
 public class HelloWorldData1 {
