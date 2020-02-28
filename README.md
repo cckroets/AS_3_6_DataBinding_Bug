@@ -51,5 +51,5 @@ public class HelloWorldData1 {
     }
 }
 ```
-Android Studio 3.6 for thinks the nested binding classes are under the root binding's package name.
+Android Studio 3.6 for thinks the nested binding classes are under the root binding's package name. The compiler will build this just fine. This is just an IDE bug.
 
